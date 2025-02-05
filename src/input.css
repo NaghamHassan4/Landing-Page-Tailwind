@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.icon {
+  @apply text-violet-500 w-1/2 py-4 dark:text-violet-300;
+}
+.btn-primary {
+  @apply bg-violet-500 text-white font-semibold rounded-[0.5rem] hover:bg-violet-900;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+.text-dark {
+  @apply dark:text-white;
+}
+.background-v {
+  @apply  dark:bg-linear-to-r from-purple-950 to-black;
+}
+
+.light-background {
+  @apply bg-linear-to-r from-pink-100 via-purple-100 to-white;
+}
+.dark-background {
+  @apply dark:bg-linear-to-r dark:from-pink-900 dark:via-purple-900 dark:to-black dark:text-white;
+}
+.center {
+  @apply container mx-auto;
+}
+.footer-background {
+  @apply bg-[url(https://cdn.prod.website-files.com/5f4a004f01308268d80d6e85/5f751e5a1f627cb12ea8b9c0_social-distance-conference-room-scaled.jpeg)] bg-cover bg-center bg-blend-overlay bg-gray-700;
+}
